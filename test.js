@@ -2,11 +2,15 @@ let op;
 let nums = document.querySelectorAll('.number');
 let num
 let output = document.getElementById('calc-display');
-let paragraph = document.createElement('p');
 
 let copier = function (element) {
     let clone = element.cloneNode(true);
     return clone;
+}
+
+let cleaner = function(input) {
+    input.value = "";
+    return;
 }
 
 
@@ -42,14 +46,11 @@ let outputHandler = function(oper) {
         case '9':
             num = '9'
             break;
+        case ',': 
+            num = ','
+            break;
     }
 
-    let pClone = copier(paragraph);
-    pClone.innerHTML = num;
-    output.appendChild(pClone);
-    let clones = [];
-    clones.push(pClone)
-    console.log(clones);
-    return clones;
+    output.value += num;
 }
 

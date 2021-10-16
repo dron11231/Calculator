@@ -22,7 +22,6 @@ body {
 }
 
 #calc-display {
-    display: flex;
     background: #f7f7f7;
     width: 190px;
     height: 40px;
@@ -30,7 +29,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     border: 1px solid black;
-    justify-content: right;
+    text-align: right;
     padding-right: 5px;
 }
 

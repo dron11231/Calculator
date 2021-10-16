@@ -12,25 +12,25 @@
 </head>
  <body>
     <div class="calculator">
-         <div id="calc-display"></div>
+         <input id="calc-display">
          <div class="button-panel">
-             <button id="calc-remove">C</button>
-             <button id="plus" onclick="op='+'">+</button>
-             <button id="minus" onclick="op='-'">-</button>
-             <button id="split" onclick="op='/'">÷</button>
-             <button id="calc-1" class="number" onclick="num='1'; outputHandler('1')">1</button>
-             <button id="calc-2" class="number" onclick="num='2'; outputHandler('2')">2</button>
-             <button id="calc-3" class="number" onclick="num='3'; outputHandler('3')">3</button>
-             <button id="multiply" onclick="op='*'">*</button>
-             <button id="calc-4" class="number" onclick="num='4'; outputHandler('4')">4</button>
-             <button id="calc-5" class="number" onclick="num='5'; outputHandler('5')">5</button>
-             <button id="calc-6" class="number" onclick="num='6'; outputHandler('6')">6</button>
-             <button id="result" onclick="calc()">=</button>
-             <button id="calc-7" class="number" onclick="num='7'; outputHandler('7')">7</button>
-             <button id="calc-8" class="number" onclick="num='8'; outputHandler('8')">8</button>
-             <button id="calc-9" class="number" onclick="num='9'; outputHandler('9')">9</button>
-             <button id="calc-0" class="number" onclick="num='0'; outputHandler('0')">0</button>
-             <button id="comma">,</button>
+             <input value="C" type="button" id="calc-remove">
+             <input value="+" type="button" id="plus" onclick="op='+'">
+             <input value="-" type="button" id="minus" onclick="op='-'">
+             <input value="/" type="button" id="split" onclick="op='/'">
+             <input value="1" type="button" id="calc-1" class="number" onclick="num='1'; outputHandler('1')">
+             <input value="2" type="button" id="calc-2" class="number" onclick="num='2'; outputHandler('2')">
+             <input value="3" type="button" id="calc-3" class="number" onclick="num='3'; outputHandler('3')">
+             <input value="*" type="button" id="multiply" onclick="op='*'">
+             <input value="4" type="button" id="calc-4" class="number" onclick="num='4'; outputHandler('4')">
+             <input value="5" type="button" id="calc-5" class="number" onclick="num='5'; outputHandler('5')">
+             <input value="6" type="button" id="calc-6" class="number" onclick="num='6'; outputHandler('6')">
+             <input value="=" type="button" id="result" onclick="calc()">
+             <input value="7" type="button" id="calc-7" class="number" onclick="num='7'; outputHandler('7')">
+             <input value="8" type="button" id="calc-8" class="number" onclick="num='8'; outputHandler('8')">
+             <input value="9" type="button" id="calc-9" class="number" onclick="num='9'; outputHandler('9')">
+             <input value="0" type="button" id="calc-0" class="number" onclick="num='0'; outputHandler('0')">
+             <input value="," type="button" id="comma">
          </div>
      </div>
     <script src="test.js"></script>

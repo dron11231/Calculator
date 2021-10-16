@@ -1,4 +1,4 @@
-let op;
+let ops = document.querySelectorAll('.operator');
 let nums = document.querySelectorAll('.number');
 let num
 let output = document.getElementById('calc-display');
@@ -10,12 +10,14 @@ let copier = function (element) {
 
 let cleaner = function(input) {
     input.value = "";
-    return;
+
 }
 
 
-let outputHandler = function(oper) {
-    switch(oper) {
+let numbers = [];
+
+let outputHandler = function(operand) {
+    switch(operand) {
         case '0':
             num = '0';
             break;
@@ -50,7 +52,42 @@ let outputHandler = function(oper) {
             num = ','
             break;
     }
-
-    output.value += num;
+    let thisValue = output.value += num;
+    
 }
+
+let plus = document.querySelector('.op-plus');
+let minus = document.querySelector('.op-minus');
+let multiply = document.querySelector('.op-multiply');
+let split = document.querySelector('.op-split');
+
+let deactivator = function(notActive1, notActive2, notActive3){
+    notActive1.id = 'inactive';
+    notActive2.id = 'inactive';
+    notActive3.id = 'inactive';
+}
+
+let activityChecker = function(elem) {
+    elem = document.getElementById('active');
+    switch (elem) {
+        case plus:
+            plus.id = 'active'
+            deactivator(minus, multiply, split);
+            break;
+        case minus:
+            minus.id = 'active'
+            deactivator(plus, multiply, split)
+            break;
+        case multiply:
+            multiply.id = 'active'
+            deactivator(minus, plus, split) 
+            break;
+        case split: 
+            split.id = 'active'
+            deactivator(minus, multiply, plus)
+            break;
+    }
+    return;
+}
+
 

@@ -60,7 +60,7 @@ body {
     height: 84px ;
 }
 
-.button-panel .op-multiply {
+.button-panel #multiply {
     height: 84px;
     grid-row-start: 2;
     grid-row-end: 4;
@@ -78,7 +78,7 @@ p {
     margin-top: 14px;   
 }
 
-#active {
+.on {
     background-color: red;
 }
 

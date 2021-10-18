@@ -15,13 +15,13 @@
          <input id="calc-display">
          <div class="button-panel">
              <input value="C" type="button" id="calc-remove" onclick="cleaner(output);">
-             <input value="+" type="button" id="plus" class='operator op-plus' onclick="id ='active'; activityChecker(plus)">
-             <input value="-" type="button" id="minus" class='operator op-minus' onclick="id ='active'; activityChecker(minus)">
-             <input value="/" type="button" id="split" class='operator op-split' onclick="id ='active'; activityChecker(split)">
+             <input value="+" type="button" id="plus" class='off' onclick="toggleState(this)">
+             <input value="-" type="button" id="minus" class='off' onclick="toggleState(this)">
+             <input value="/" type="button" id="split" class='off' onclick="toggleState(this)">
              <input value="1" type="button" id="calc-1" class="number" onclick="outputHandler('1')">
              <input value="2" type="button" id="calc-2" class="number" onclick="outputHandler('2')">
              <input value="3" type="button" id="calc-3" class="number" onclick="outputHandler('3')">
-             <input value="*" type="button" id="multiply" class='operator op-multiply' onclick="id ='active'; activityChecker(multiply)">
+             <input value="*" type="button" id="multiply" class='off' onclick="toggleState(this)">
              <input value="4" type="button" id="calc-4" class="number" onclick="outputHandler('4')">
              <input value="5" type="button" id="calc-5" class="number" onclick="outputHandler('5')">
              <input value="6" type="button" id="calc-6" class="number" onclick="outputHandler('6')">

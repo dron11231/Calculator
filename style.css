@@ -82,3 +82,6 @@ p {
     background-color: red;
 }
 
+.calc-remove:active, .number:active{
+    background-color: teal;
+}
